@@ -6,5 +6,6 @@ services:
   image: 'mariadb'
   environment:
    MYSQL_ROOT_PASSWORD: secret-pw
+   # Sets the default password 
  messaging:
   image: 'rabbitmq:3-management'
