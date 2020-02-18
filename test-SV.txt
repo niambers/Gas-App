@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-testt
-=======
-this is a test
->>>>>>> cde944930fc59523aacb9e6746331dca258aeb9f
