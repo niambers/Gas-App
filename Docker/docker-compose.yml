@@ -3,7 +3,7 @@
 version: '3'
 services:
  front_end:
-  build: /Users/freddy/Documents/NJIT/Spring 2020/IT-490/Group_Project/Front-End
+  build: /Users/freddy/Documents/NJIT/Spring 2020/IT-490/Group_Project/Front-End # Needs editing
   ports: 
    - 80:80
  messaging:
