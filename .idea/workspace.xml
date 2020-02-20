@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ea1e61ba-444e-4ec7-8766-6042977a9f82" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Database/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/receive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/send.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitMQ/Dockerfile" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Y23Gga3PVM9a4OFwHrC5ZWHM2L" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Messaging" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea1e61ba-444e-4ec7-8766-6042977a9f82" name="Default Changelist" comment="" />
+      <created>1582126769062</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582126769062</updated>
+      <workItem from="1582126773634" duration="129000" />
+      <workItem from="1582126970132" duration="1669000" />
+      <workItem from="1582132843092" duration="52000" />
+      <workItem from="1582132962590" duration="1568000" />
+      <workItem from="1582176524111" duration="1587000" />
+      <workItem from="1582216709793" duration="2147000" />
+    </task>
+    <task id="LOCAL-00001" summary="Testing Git in IDE.">
+      <created>1582128502595</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582128502595</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Testing Git in IDE." />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing Git in IDE." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="157" y="0" key="CommitChangelistDialog2" timestamp="1582128502261">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="157" y="0" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1582128502261" />
+    <state x="141" y="39" key="SettingsEditor" timestamp="1582218459657">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="141" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1582218459657" />
+    <state x="240" y="136" key="Vcs.Push.Dialog.v2" timestamp="1582128518100">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="240" y="136" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1582128518100" />
+    <state x="317" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1582176524490">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="317" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1582176524490" />
+  </component>
+</project>
