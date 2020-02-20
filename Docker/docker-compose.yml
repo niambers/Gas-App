@@ -15,4 +15,6 @@ services:
   #image: 'mariadb'
   #environment:
    #MYSQL_ROOT_PASSWORD: secret-pw
-   # Sets the default password 
+   # Sets the default password
+networks:
+ 
