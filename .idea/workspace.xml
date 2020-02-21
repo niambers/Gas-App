@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea1e61ba-444e-4ec7-8766-6042977a9f82" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Database/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/helloworld.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/helloworld2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/freddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/freddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Back-End/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/receive.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/send.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docker/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/send.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/send.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RabbitMQ/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitMQ/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +50,35 @@
       <recent name="$PROJECT_DIR$/Messaging" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="send" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Group_Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Back-End" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Back-End/send.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.send" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -76,7 +106,10 @@
       <workItem from="1582132843092" duration="52000" />
       <workItem from="1582132962590" duration="1568000" />
       <workItem from="1582176524111" duration="1587000" />
-      <workItem from="1582216709793" duration="2147000" />
+      <workItem from="1582216709793" duration="2432000" />
+      <workItem from="1582240275484" duration="1681000" />
+      <workItem from="1582254765079" duration="9973000" />
+      <workItem from="1582318913115" duration="119000" />
     </task>
     <task id="LOCAL-00001" summary="Testing Git in IDE.">
       <created>1582128502595</created>
@@ -85,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582128502595</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Overhaul.">
+      <created>1582220011098</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582220011098</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,24 +134,45 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Testing Git in IDE." />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing Git in IDE." />
+    <MESSAGE value="Overhaul." />
+    <option name="LAST_COMMIT_MESSAGE" value="Overhaul." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="157" y="0" key="CommitChangelistDialog2" timestamp="1582128502261">
+    <state x="157" y="0" key="CommitChangelistDialog2" timestamp="1582220010776">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="157" y="0" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1582128502261" />
-    <state x="141" y="39" key="SettingsEditor" timestamp="1582218459657">
+    <state x="157" y="0" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1582220010776" />
+    <state width="1640" height="276" key="GridCell.Tab.0.bottom" timestamp="1582269475151">
+      <screen x="1280" y="-535" width="1680" height="1050" />
+    </state>
+    <state width="1640" height="276" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.-535.1680.1050@1280.-535.1680.1050" timestamp="1582269475151" />
+    <state width="1640" height="276" key="GridCell.Tab.0.center" timestamp="1582269475149">
+      <screen x="1280" y="-535" width="1680" height="1050" />
+    </state>
+    <state width="1640" height="276" key="GridCell.Tab.0.center/0.0.1280.800/1280.-535.1680.1050@1280.-535.1680.1050" timestamp="1582269475149" />
+    <state width="1640" height="276" key="GridCell.Tab.0.left" timestamp="1582269475148">
+      <screen x="1280" y="-535" width="1680" height="1050" />
+    </state>
+    <state width="1640" height="276" key="GridCell.Tab.0.left/0.0.1280.800/1280.-535.1680.1050@1280.-535.1680.1050" timestamp="1582269475148" />
+    <state width="1640" height="276" key="GridCell.Tab.0.right" timestamp="1582269475150">
+      <screen x="1280" y="-535" width="1680" height="1050" />
+    </state>
+    <state width="1640" height="276" key="GridCell.Tab.0.right/0.0.1280.800/1280.-535.1680.1050@1280.-535.1680.1050" timestamp="1582269475150" />
+    <state x="141" y="39" key="SettingsEditor" timestamp="1582319032802">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="141" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1582218459657" />
-    <state x="240" y="136" key="Vcs.Push.Dialog.v2" timestamp="1582128518100">
+    <state x="141" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1582319032802" />
+    <state x="240" y="136" key="Vcs.Push.Dialog.v2" timestamp="1582220012746">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="136" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1582128518100" />
-    <state x="317" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1582176524490">
+    <state x="240" y="136" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1582220012746" />
+    <state x="317" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1582240276273">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state x="317" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800/1280.-535.1680.1050@0.0.1280.800" timestamp="1582240276273" />
     <state x="317" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1582176524490" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/IT_490_Project$send.coverage" NAME="send Coverage Results" MODIFIED="1582269467359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Back-End" />
   </component>
 </project>

@@ -1,19 +1,25 @@
 # Author: Freddy Roa-Familia
 # Version: 1.1
-version: '3'
+version: "3.7"
+
 services:
- front_end:
-  build: ./Front-End # Needs editing
-  ports: 
-   - 5000:80
- messaging:
-  build: ./RabbitMQ
-  ports:
-   - 5672:5672   # Default port for RabbitMQ message broker
-   - 15672:15672 # Default port for RabbitMQ GUI
- back_end:
-  build: ./Back-End
- database:
-  build: ./Database
-  environment:
-   MYSQL_ROOT_PASSWORD: secret-pw # Sets the default password
+
+  back_end:
+    build: ./Back-End
+    depends_on:
+      - messaging
+    environment:
+      AMQP_URL: 'amqp://rabbitmq?connection_attempts=5&retry_delay=5'
+  messaging:
+    image: rabbitmq:3.8.2-management-alpine
+    ports:
+      - '5672:5672'   # Default port for RabbitMQ message broker
+      - '15672:15672' # Default port for RabbitMQ GUI
+  front_end:
+   build: ./Front-End # Needs editing
+   ports:
+    - 5000:80
+ #database:
+  #build: ./Database
+  #environment:
+   #MYSQL_ROOT_PASSWORD: secret-pw # Sets the default password
