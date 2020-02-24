@@ -3,7 +3,7 @@
 version: "3.7"
 
 services:
-
+ 
   back_end:
     build: ./Back-End
     depends_on:
@@ -19,7 +19,8 @@ services:
    build: ./Front-End # Needs editing
    ports:
     - 5000:80
- #database:
-  #build: ./Database
-  #environment:
-   #MYSQL_ROOT_PASSWORD: secret-pw # Sets the default password
+  database:
+   image:mysql:latest
+   build: ./Database-1
+   ports:
+   -3306:3306
