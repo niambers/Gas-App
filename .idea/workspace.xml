@@ -2,19 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea1e61ba-444e-4ec7-8766-6042977a9f82" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Back-End/helloworld.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/helloworld2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/freddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/freddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Back-End/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/send.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/send.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RabbitMQ/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitMQ/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/helloworld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/helloworld2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/receive.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/send.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -105,6 +109,7 @@
       <workItem from="1582240275484" duration="1681000" />
       <workItem from="1582254765079" duration="9973000" />
       <workItem from="1582318913115" duration="119000" />
+      <workItem from="1583166220199" duration="727000" />
     </task>
     <task id="LOCAL-00001" summary="Testing Git in IDE.">
       <created>1582128502595</created>
@@ -153,6 +158,10 @@
       <screen x="1280" y="-535" width="1680" height="1050" />
     </state>
     <state width="1640" height="276" key="GridCell.Tab.0.right/0.0.1280.800/1280.-535.1680.1050@1280.-535.1680.1050" timestamp="1582269475150" />
+    <state x="452" y="330" key="NewPhpFileDialog" timestamp="1583166650931">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="452" y="330" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1583166650931" />
     <state x="141" y="39" key="SettingsEditor" timestamp="1582319032802">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
