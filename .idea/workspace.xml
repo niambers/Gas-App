@@ -2,7 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea1e61ba-444e-4ec7-8766-6042977a9f82" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database-1/db/#innodb_temp/temp_1.ibt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database-1/db/#innodb_temp/temp_10.ibt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database-1/db/#innodb_temp/temp_2.ibt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database-1/db/#innodb_temp/temp_3.ibt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database-1/db/#innodb_temp/temp_4.ibt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database-1/db/#innodb_temp/temp_5.ibt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database-1/db/#innodb_temp/temp_6.ibt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database-1/db/#innodb_temp/temp_7.ibt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database-1/db/#innodb_temp/temp_8.ibt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database-1/db/#innodb_temp/temp_9.ibt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database-1/db/binlog.000002" beforeDir="false" afterPath="$PROJECT_DIR$/Database-1/db/binlog.000002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database-1/db/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/Database-1/db/binlog.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database-1/db/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/Database-1/db/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database-1/db/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/Database-1/db/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database-1/db/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/Database-1/db/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database-1/db/ibtmp1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database-1/db/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/Database-1/db/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database-1/db/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/Database-1/db/undo_001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database-1/db/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/Database-1/db/undo_002" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +124,7 @@
       <workItem from="1582240275484" duration="1681000" />
       <workItem from="1582254765079" duration="9973000" />
       <workItem from="1582318913115" duration="119000" />
-      <workItem from="1583166220199" duration="937000" />
+      <workItem from="1583166220199" duration="2055000" />
     </task>
     <task id="LOCAL-00001" summary="Testing Git in IDE.">
       <created>1582128502595</created>
@@ -119,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582220011098</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Edited docker-compose.yml">
+      <created>1583167489161</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583167489161</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,13 +157,14 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Testing Git in IDE." />
     <MESSAGE value="Overhaul." />
-    <option name="LAST_COMMIT_MESSAGE" value="Overhaul." />
+    <MESSAGE value="Edited docker-compose.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited docker-compose.yml" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="157" y="0" key="CommitChangelistDialog2" timestamp="1583167434392">
+    <state x="157" y="0" key="CommitChangelistDialog2" timestamp="1583167488781">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="157" y="0" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1583167434392" />
+    <state x="157" y="0" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1583167488781" />
     <state width="1640" height="276" key="GridCell.Tab.0.bottom" timestamp="1582269475151">
       <screen x="1280" y="-535" width="1680" height="1050" />
     </state>
@@ -160,10 +189,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="141" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1582319032802" />
-    <state x="240" y="136" key="Vcs.Push.Dialog.v2" timestamp="1582220012746">
+    <state x="240" y="136" key="Vcs.Push.Dialog.v2" timestamp="1583167505157">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="136" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1582220012746" />
+    <state x="240" y="136" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1583167505157" />
     <state x="317" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1583166228009">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
