@@ -3,13 +3,12 @@ version: "3.7"
 services:
 
   front_end:
-    build: ./Front-End # Needs editing
+    build: ./Front-End
     ports:
       - 5000:80
 
   messaging:
-    image: rabbitmq:3.8.2-management-alpine
-    #build: ./Messaging Dockerfile needs to be created in this folder
+    build: ./Messaging 
     ports:
       - 5672:5672 # Default port for RabbitMQ message broker
       - 15672:15672 # Default port for RabbitMQ GUI
