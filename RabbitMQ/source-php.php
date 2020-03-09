@@ -1,14 +1,14 @@
 <?php
 
 require_once(__DIR__ . '/vendor/autoload.php');
-//autoloading: allows us to use PHP classes
+//Autoloading: allows us to use PHP classes
 //without the need to require() or include()
 
-define("RABBITMQ_HOST", "rabbitmq.programster.org"); //Ask about this
+define("RABBITMQ_HOST", "messaging"); //the name of container
 define("RABBITMQ_PORT", 5672);
 define("RABBITMQ_USERNAME", "group1");
 define("RABBITMQ_PASSWORD", "getajob");
-define("RABBITMQ_QUEUE_NAME", "sample"); //sameple = a test queue
+define("RABBITMQ_QUEUE_NAME", "sample"); //sample = a test queue
 
 $connection = new \PhpAmqpLib\Connection\AMQPStreamConnection(
     RABBITMQ_HOST,
