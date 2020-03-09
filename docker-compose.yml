@@ -2,22 +2,19 @@ version: "3.7"
 
 services:
 
-  front_end:
-    build: ./Front-End
-    ports:
-      - 5000:80
+  #front_end:
+    #build: ./Front-End
+    #ports:
+      #- 5000:80
 
-  messaging:
-    build: ./Messaging 
-    ports:
-      - 5672:5672 # Default port for RabbitMQ message broker
-      - 15672:15672 # Default port for RabbitMQ GUI
+  #messaging:
+    #build: ./Messaging
+    #ports:
+      #- 5672:5672 # Default port for RabbitMQ message broker
+      #- 15672:15672 # Default port for RabbitMQ GUI
 
   back_end:
     build: ./Back-End
-    links:
-      - database
-
 
   database:
     build: ./Database-1
