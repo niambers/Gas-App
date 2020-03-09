@@ -15,8 +15,9 @@ services:
 
   back_end:
     build: ./Back-End
-    depends_on:
-      - messaging
+    links:
+      - database
+
 
   database:
     build: ./Database-1
