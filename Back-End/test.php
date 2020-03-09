@@ -1,11 +1,11 @@
 <?php
 
-
-
-
+$servername = "database";
+$database = "test";
 $username = "test";
 $password = "test";
-$hostname = "database";
-$dsn = "mysql:host=$hostname;dbname=$username"; // DO NOT ADD ANY SPACES, THROWS ERROR!
 
-$db = new PDO('mysql:host'$dsn, $username, $password);
+try {
+    $connection = new PDO("mysql:host=$servername;$database",$username,$password);
+    $connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+}
