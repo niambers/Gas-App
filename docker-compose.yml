@@ -15,7 +15,10 @@ services:
 
   back_end:
     build: ./Back-End
-
+    depends_on:
+      - database
+    volumes:
+     - "./Back-End:/usr/src/myapp"
   database:
     build: ./Database-1
     volumes:
