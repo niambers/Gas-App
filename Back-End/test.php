@@ -1,25 +1,60 @@
 <?php
+// Testing RabbitMQ receiving code
+require_once __DIR__ . '/vendor/autoload.php';
+use PhpAmqpLib\Connection\AMQPStreamConnection;
 
-$servername = "database"; // Automatically resolves to the docker service named 'database'
+$connection = new AMQPStreamConnection('messaging', 5672, 'guest', 'guest');
+$channel = $connection->channel();
+
+$channel->queue_declare('hello', false, false, false, false);
+
+echo " [*] Waiting for messages. To exit press CTRL+C\n";
+
+$callback = function ($msg) {
+    echo ' [x] Received ', $msg->body, "\n";
+};
+
+$channel->basic_consume('hello', '', false, true, false, false, $callback);
+
+while ($channel->is_consuming()) {
+    $channel->wait();
+}
+
+$channel->close();
+$connection->close();
+
+// Automatically resolve to the docker service named 'database'
+/*$servername = "database";
 $database = "test";
 $username = "test";
 $password = "test";
+
+// Limit to 3 attempts
 $attempt = 3;
 
-while ($attempt>0) { // Attempts to connect to the database 3 times
+// Attempt connection to database
+while ($attempt>0) {
     try {
-        sleep(2); // Wait 2 seconds before attempting to connect to the database
+        // Wait 2 seconds before connection attempt
+        sleep(2);
         $connection = new PDO("mysql:host=$servername;dbname=test",$username,$password);
-        $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // Set PDO error mode to exception
-        $attempt = 0; // Set attempt to 0 to exit while loop after successful connection
+
+        // Set PDO error mode to exception
+        $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        //  Set attempt to 0 in order to exit the while loop after establishing a connection
+        $attempt = 0;
         echo "Connection Successful\n";
     }
     catch (PDOException $e) {
-        echo "Connection Failed: " . $e->getMessage() . "\n"; // Print out error messages
+        // Print out error messages
+        echo "Connection Failed: " . $e->getMessage() . "\n";
         $attempt--;
-        sleep(2); // Wait 2 seconds between attempts
+        // Wait 2 seconds before connection attempt
+        sleep(2);
     }
 }
+
 //$connection = null; // Closes the connection automatically when the program ends
 //$query = "INSERT INTO users (user_id,name,phone_number) VALUES ('3','joe','9333339345')";
-//$connection->exec($query);
+//$connection->exec($query);*/
