@@ -1,2 +1,5 @@
-create table users(user_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,fname TEXT,lname TEXT,email TEXT,password TEXT);
-INSERT INTO users (fname,lname,email,password) values ('john','King','jking@gmail.com','jo1212');
+CREATE TABLE users2 (fname VARCHAR(60), lname VARCHAR(60), email VARCHAR(60),password VARCHAR(60));
+INSERT INTO users2 (fname,lname,email,password) values ('john','King','jking@gmail.com','jo1212');
+
+
+
