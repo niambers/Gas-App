@@ -2,7 +2,7 @@ services:
 
 //Change messaging to:
   master:
-    image: rabbitmq:3.8.2-management-alpine
+    image: rabbitmq:3.8.2-management
     hostname: master
     environment:
     //credentials for admin - management access
@@ -13,7 +13,7 @@ services:
       - "15672:15672"
 
   slave1:
-    image: rabbitmq:3.8.2-management-alpine
+    image: rabbitmq:3.8.2-management
     hostname: slave1
     depends_on:
     //is linked to
@@ -24,7 +24,7 @@ services:
       - RAM_NODE=true
 
   slave2:
-    image: rabbitmq:3.8.2-management-alpine
+    image: rabbitmq:3.8.2-management
     hostname: slave2
     depends_on:
       - master
