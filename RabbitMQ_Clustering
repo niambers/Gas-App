@@ -1,0 +1,47 @@
+services:
+
+//Change messaging to:
+  master:
+    image: rabbitmq:3.8.2-management-alpine
+    hostname: master
+    environment:
+    //credentials for admin - management access
+      - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER:-admin}
+      - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS:-admin}
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  slave1:
+    image: rabbitmq:3.8.2-management-alpine
+    hostname: slave1
+    depends_on:
+    //is linked to
+      - master
+    environment:
+      - CLUSTERED=true
+      - CLUSTER_WITH=master
+      - RAM_NODE=true
+
+  slave2:
+    image: rabbitmq:3.8.2-management-alpine
+    hostname: slave2
+    depends_on:
+      - master
+      - slave1
+    environment:
+      - CLUSTERED=true
+      - CLUSTER_WITH=master
+
+  networks:
+    default:
+      external:
+        name: rabbitmq-cluster
+
+//Remaining Questions
+      //Do I need volumes?
+      //Do the ports belong under each node?
+
+//References:
+      //https://medium.com/@kailashyogeshwar/rabbitmq-cluster-using-docker-compose-7397ea378d73
+      //https://medium.com/@oprearocks/set-up-a-rabbitmq-cluster-on-your-laptop-using-docker-4276555b0f28
