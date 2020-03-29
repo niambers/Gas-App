@@ -4,10 +4,6 @@ services:
   messaging:
     image: rabbitmq:3.8.2-management
     hostname: messaging
-    environment:
-    //credentials for admin - management access
-      - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER:-admin}
-      - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS:-admin}
     ports:
       - "5672:5672"
       - "15672:15672"
