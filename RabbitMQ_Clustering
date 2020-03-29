@@ -1,40 +1,31 @@
 services:
 
 //Change to:
-  messaging:
-    image: rabbitmq:3.8.2-management
-    hostname: messaging
-    ports:
-      - "5672:5672"
-      - "15672:15672"
-
-  cluster1:
-    image: rabbitmq:3.8.2-management
-    hostname: cluster1
-    depends_on:
-    //is linked to
-      - messaging
-    environment:
-      - CLUSTERED=true
-      - CLUSTER_WITH=messaging
-      - RAM_NODE=true
-
-  cluster2:
-    image: rabbitmq:3.8.2-management
-    hostname: cluster2
-    depends_on:
-      - messaging
-      - cluster1
-    environment:
-      - CLUSTERED=true
-      - CLUSTER_WITH=messaging
-
-  networks:
-  //you can also make clustering network in terminal with
-  //docker network create rabbitmq-cluster
-    default:
-      external:
-        name: rabbitmq-cluster
+messaging:
+  image: rabbitmq:3.8.2-management
+  hostname: messaging
+  ports:
+    - "5672:5672"
+    - "15672:15672"
+    - "25672:25672"
+cluster1:
+  image: rabbitmq:3.8.2-management
+  hostname: cluster1
+  depends_on:
+    - messaging
+  environment:
+    - CLUSTERED=true
+    - CLUSTER_WITH=messaging
+    - RAM_NODE=true
+cluster2:
+  image: rabbitmq:3.8.2-management
+  hostname: cluster2
+  depends_on:
+    - messaging
+    - cluster1
+  environment:
+    - CLUSTERED=true
+    - CLUSTER_WITH=messaging
 
 //Remaining Questions
       //Q:Do I need volumes????
