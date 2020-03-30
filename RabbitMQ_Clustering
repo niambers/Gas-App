@@ -1,0 +1,37 @@
+services:
+
+//Change to:
+messaging:
+  image: rabbitmq:3.8.2-management
+  hostname: messaging
+  ports:
+    - "5672:5672"
+    - "15672:15672"
+    - "25672:25672"
+cluster1:
+  image: rabbitmq:3.8.2-management
+  hostname: cluster1
+  depends_on:
+    - messaging
+  environment:
+    - CLUSTERED=true
+    - CLUSTER_WITH=messaging
+    - RAM_NODE=true
+cluster2:
+  image: rabbitmq:3.8.2-management
+  hostname: cluster2
+  depends_on:
+    - messaging
+    - cluster1
+  environment:
+    - CLUSTERED=true
+    - CLUSTER_WITH=messaging
+
+//Remaining Questions
+      //Q:Do I need volumes????
+      //Q: Does image have to be under every node?
+//Q: Do the ports belong under each node? A: No, they should already know.
+//To check if clusters are "clustering" sign into Management UI
+//References:
+      //https://medium.com/@kailashyogeshwar/rabbitmq-cluster-using-docker-compose-7397ea378d73
+      //https://medium.com/@oprearocks/set-up-a-rabbitmq-cluster-on-your-laptop-using-docker-4276555b0f28

@@ -4,7 +4,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 //autoloading: allows us to use PHP classes
 //without the need to require() or include()
 
-define("RABBITMQ_HOST", "rabbitmq.programster.org"); //Ask about this
+define("RABBITMQ_HOST", "messaging");
 define("RABBITMQ_PORT", 5672);
 define("RABBITMQ_USERNAME", "group1");
 define("RABBITMQ_PASSWORD", "getajob");
@@ -30,7 +30,6 @@ $channel->queue_declare(
     $arguments = null,
     $ticket = null
 );
-
 
 echo ' [*] Waiting for messages. To exit press CTRL+C', "\n";
 //will run forever if you don't press CTRL+C
