@@ -46,4 +46,4 @@ services:
       - "./Database-1/db:/var/lib/mysql"
     restart: always
     ports:
-      - "3306:3306"
+      - 3306:3306
