@@ -1,13 +1,28 @@
 # Author: Freddy Roa-Familia
-# Version: 1.0
 
-FROM python:3.7-alpine3.10
-RUN python -m pip install pika --upgrade &&\
-    mkdir c:\home\send
-ENV PYTHONUNBUFFERED=1
-# Creates directory 'helloworld' in container
-# RUN mkdir c:\home\helloworld
-# Copies 'helloworld.py' from local directory into the containers helloworld folder
-COPY send.py /home/send/
-# Runs 'helloworld.py' in the container
-CMD ["python","/home/send/send.py"]
+# PHP dependency manager
+FROM composer:1.9.3 AS composer
+
+FROM php:7.4.3-cli
+
+# Copies dependency manager into PHP image
+COPY --from=composer /usr/bin/composer /usr/local/bin/composer
+
+# Install RabbitMQ PHP client
+RUN apt-get -qq update && apt-get -qq -y install \
+    git \
+    libzip-dev \
+    unzip \
+    && docker-php-ext-install \
+       sockets \
+       zip \
+    && composer require php-amqplib/php-amqplib \
+
+    && composer install
+# Copies files from a source directory into the containers filesystem
+COPY . /usr/src/myapp
+CMD ["php", "/usr/src/myapp/test.php"]
+
+# WORKDIR /usr/src/myapp
+# Install PDO support
+# RUN docker-php-ext-install pdo pdo_mysql
