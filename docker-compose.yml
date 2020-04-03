@@ -47,3 +47,22 @@ services:
     restart: always
     ports:
       - 3306:3306
+      
+  cluster_1:
+    build: ./Database-1
+    hostname: cluster_1
+    depends_on:
+      - database
+    environment:
+      - CLUSTERED=true
+      - CLUSTER_WITH=database
+      - RAM_NODE=true
+  cluster_2:
+    build: ./Database-1
+    hostname: cluster_2
+    depends_on:
+      - database
+      - cluster_1
+    environment:
+      - CLUSTERED=true
+      - CLUSTER_WITH=database
